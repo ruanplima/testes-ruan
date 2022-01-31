@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            background-color: black;
+            padding: 10px;
+        }
+        a{
+            padding-left: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        a:hover{
+            background-color:rgba(77, 77, 77, 0.486);
+            padding: 11px;
+        }            
+        @media (min-width: 700px) and (max-width: 900px) {
+            nav{
+                padding: 10px;
+                text-align: center;
+            }
+        }
+        @media (min-width: 400px) and (max-width: 699px) {
+            nav{
+                padding: 10px;
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">MAIS PRODUTOS</a>
+        <a href="#">PROMOÇÃO</a>
+        <a href="#">FALE CONOSCO</a>
+    </nav>
+</body>
+</html>
