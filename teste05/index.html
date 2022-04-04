@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicho Solto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicons/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="bloco1">
+
+        <img src="pet.png">
+
+        <h1>Cadastrar Pet</h1>
+
+        <form>
+
+           <div class="bloco2">
+                <input required placeholder="Nome do Pet" class="name"type="text"> 
+                <input placeholder="Idade(meses)" class="number" type="number">
+            </div>
+
+            <input required placeholder="Email do Responsável" class="email" type="email">
+
+    <p>Espécie</p>
+
+        <div>
+            <input checked type="radio" id="canino" name="especie">
+            <label for="canino">Canino</label>
+            <input type="radio" id="felino" name="especie">
+            <label for="felino">Felino</label>
+        </div>
+
+    <p>Porte</p>
+
+        <div>
+            <input checked type="radio" id="pequeno" name="porte">
+            <label for="pequeno">Pequeno</label>
+            <input type="radio" id="medio" name="porte">
+            <label for="medio">Médio</label>
+            <input type="radio" id="grande" name="porte">
+            <label for="grande">Grande</label>
+        </div>
+
+    <button>Cadastrar</button>
+
+        </form>
+
+    </div>
+
+    <script>
+        var nome = window.prompt("Qual seu nome?")
+        window.alert("Olá, " + nome +", seja bem vindo ao nosso site de Cadastramento da Clínica Veterinária Bicho Solto! Preencha todos os campos com atenção.")
+    </script>
+</body>
+</html>
