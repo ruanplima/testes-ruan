@@ -75,6 +75,7 @@ a:hover{
     margin-bottom: 20px;
     position: absolute;
     transform: translateY(105%);
+    margin-bottom: 10px;
 }
 
 .bloco1{
@@ -86,11 +87,25 @@ a:hover{
 @media (max-width: 930px){
 
 .bloco2{
+    width: 361px;
     position: absolute;
-    transform: translateY(104%);
+    transform: translateY(100%);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .bloco3{
+    width: 361px;
     position: absolute;
-    transform: translateY(210%);
+    transform: translateY(207%);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.bloco1{
+    width: 380px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -50px;
 }
 }
