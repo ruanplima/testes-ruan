@@ -30,7 +30,7 @@ body{
     position: relative;
     border-radius: 20px 0px;
     box-shadow: 1px 1px 8px 1px var(--cor4);
-    margin: 10px 0px;
+    margin: 0px 10px;
 }
 
 h1{
