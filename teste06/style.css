@@ -90,15 +90,15 @@ a:hover{
     width: 62.5%;
     position: absolute;
     transform: translateY(100%);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .bloco3{
     width: 62.5%;
     position: absolute;
     transform: translateY(207%);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 2%;
 }
 
