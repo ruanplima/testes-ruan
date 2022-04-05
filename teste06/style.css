@@ -75,16 +75,16 @@ a:hover{
     margin-bottom: 20px;
     position: absolute;
     width: 360px;
-    transform: translateY(102%);
+    transform: translateY(112%);
 }
 
 .bloco1{
-    margin-top: -70px;
+    margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
 }
 .bloco2{
-    margin-top: -70px;
+    margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -96,18 +96,18 @@ a:hover{
 .bloco2{
     width: 50%;
     position: absolute;
-    transform: translateY(100%);
+    transform: translateY(105%);
 }
 .bloco3{
     width: 50%;
     position: absolute;
-    transform: translateY(198%);
+    transform: translateY(215%);
 }
 
 .bloco1{
     width: 50%;
     position: absolute;
-    margin-top: -100px;
+    margin-top: 20px;
 }
 
 img{
