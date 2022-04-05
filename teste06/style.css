@@ -30,7 +30,7 @@ h1{
 }
 
 div{
-    width: 320px;
+    width: 360px;
     padding: 50px;
     background-color: white;
     text-align: center;
@@ -74,12 +74,19 @@ a:hover{
 .bloco3{
     margin-bottom: 20px;
     position: absolute;
-    transform: translateY(105%);
-    margin-bottom: 2%;
+    width: 360px;
+    transform: translateY(102%);
 }
 
 .bloco1{
-    margin-right: 2%;
+    margin-top: -70px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.bloco2{
+    margin-top: -70px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 }
@@ -87,26 +94,20 @@ a:hover{
 @media (max-width: 930px){
 
 .bloco2{
-    width: 62.5%;
+    width: 360px;
     position: absolute;
     transform: translateY(100%);
-    margin-left: 5%;
-    margin-right: 5%;
 }
 .bloco3{
-    width: 62.5%;
+    width: 360px;
     position: absolute;
-    transform: translateY(207%);
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
+    transform: translateY(198%);
 }
 
 .bloco1{
-    width: 62.5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: -50px;
+    width: 360px;
+    position: absolute;
+    margin-top: -100px;
 }
 
 img{
