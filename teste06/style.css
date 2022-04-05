@@ -64,7 +64,6 @@ a{
     border-radius: 5px;
     font-weight: 700;
 }
-
 a:hover{
     background-color: var(--cor3);
 }
