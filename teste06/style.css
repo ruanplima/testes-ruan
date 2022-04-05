@@ -94,18 +94,18 @@ a:hover{
 @media (max-width: 930px){
 
 .bloco2{
-    width: 360px;
+    width: 50%;
     position: absolute;
     transform: translateY(100%);
 }
 .bloco3{
-    width: 360px;
+    width: 50%;
     position: absolute;
     transform: translateY(198%);
 }
 
 .bloco1{
-    width: 360px;
+    width: 50%;
     position: absolute;
     margin-top: -100px;
 }
