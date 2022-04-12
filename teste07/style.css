@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #acffff;
+    --cor2: #81fef6;
+    --cor3: #56fdec ;
+    --cor4: #2bfce3;
+    --cor5: #00fbd9;
+    --cor6: #01b49c;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(226, 207, 207, 0.473);
+    padding: 10px;
+}
+
+header{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+h1{
+    color: #01b49c;
+}
+
+header p{
+    margin: 15px 0px;
+    color: rgba(0, 0, 0, 0.534); 
+    font-weight: 500;
+}
+
+div{
+   margin: 100px auto;
+   max-width: 940px; 
+   position: relative;
+}
+
+.section1{
+    background-color: var(--cor6);
+    width: 40%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 100%;
+    padding: 5.5%;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.section2{
+    background-color: var(--cor2);
+    width: 40%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 100%;
+    padding: 5.5%;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.section1 h2{
+    color: black;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.534);
+    margin-bottom: 25px;
+}
+
+.section1 p{
+    color: white;
+    margin-bottom: 25px;
+}
+
+strong{
+    font-size: 2em
+}
+
+button{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    cursor: pointer;
+}
