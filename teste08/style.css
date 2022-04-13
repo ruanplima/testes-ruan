@@ -65,6 +65,24 @@ button:hover{
     background-color: var(--buttonHover);
 }
 
+a{
+    text-decoration: none;
+    color: var(--fonte1);
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--cor-fundo1);
+    color: var(--fonte1);
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
 .image{
     text-align: center;
     margin: 15px 5px;
@@ -76,6 +94,9 @@ img{
 @media (max-width: 785px){
     img{
         max-width: 450px;
+    }
+    footer{
+        transform: translateY(10px);
     }
 }
 
