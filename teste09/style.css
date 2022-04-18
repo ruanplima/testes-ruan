@@ -19,12 +19,9 @@ header{
     color: rgb(255, 255, 255);
 }
 
-header h1{
-    text-shadow: 1px 1px 4px black;
-}
-
 header p{
     text-shadow: 3px 3px 3px black;
+    font-size: 15px;
 }
 
 body{
@@ -40,6 +37,14 @@ form{
     padding: 10px;
     max-width: 450px;
     box-shadow: 1px 2px 5px 2px black ;
+}
+
+.tamanho{
+    width: 97.2%;
+}
+
+.seletor{
+    width: 100%;
 }
 
 div{
@@ -90,7 +95,7 @@ textarea{
     color: white;
     background-color: rgba(0, 0, 0, 0.404);
     font-weight: 600;
-    width: 97.5%;
+    width: 97.2%;
 }
 
 button{
