@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>freeCodeCamp Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form>
+        <div>
+            <label>Nome</label> <br>
+            <input type="text">
+        </div>
+
+        <div>
+            <label>Email</label> <br>
+            <input type="email">
+        </div>
+
+        <div>
+            <label>Idade (opcional) </label> <br>
+            <input type="number" max="100" min="15">
+        </div>
+
+        <div>
+            <p>
+                Qual função exerce atualmente?
+            </p>
+            <select>
+                <option disabled selected value="#">Selecione a opção</option>
+                <option value="#">Estudante</option>
+                <option value="#">trabalho em tempo integral</option>
+                <option value="#">Aprendiz em tempo integral</option>
+                <option value="#"> Prefiro não dizer </option>
+                <option value="#">Outro</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <p>
+                Você recomendaria o freeCodeCamp a um amigo?
+            </p>
+            <input name="recomendacao" checked id="sim" type="radio">
+            <label for="sim">Sim</label>
+            <input name="recomendacao" id="nao" type="radio">
+            <label for="nao">Não</label>
+            <input name="recomendacao" id="talvez" type="radio">
+            <label for="talvez">Talvez</label>
+        </div>
+
+        <div>
+            <p>
+                Qual é o seu recurso favorito do freeCodeCamp
+            </p>
+            <select>
+                <option disabled selected value="#">Selecione a opção</option>
+                <option value="#">Desafios</option>
+                <option value="#">Projetos</option>
+                <option value="#">Comunidade</option>
+                <option value="#">Open Source</option>
+            </select>
+        </div>
+
+        <div class="bloco">
+            <p>
+            O que você gostaria de ver melhorando? (Marque todos os que se aplicam)
+            </p>
+            <input id="Front-end Projects" type="checkbox">
+            <label for="Front-end Projects">Front-end Projects</label>
+            <input id="Back-end Projects" type="checkbox">
+            <label for="Back-end Projects">Back-end Projects</label>
+            <input id="Desafios" type="checkbox">
+            <label for="Desafios">Desafios</label>
+            <input id="Open Source Community" type="checkbox">
+            <label for="Open Source Community">Open Source Community</label>
+            <input id="Videos" type="checkbox">
+            <label for="Videos">Videos</label>
+        </div>
+
+        <div>
+            <p class="text">
+                Deixe algum comentário ou sugestão!
+            </p>
+            <textarea placeholder="escreva aqui..." cols="40" rows="8"></textarea>
+        </div>
+
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>

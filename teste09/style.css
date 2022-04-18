@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+:root{
+    --corForm: #272747;
+    --corFont: rgb(48, 48, 48);
+    --corButton: #37AF65;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+header h1{
+    text-shadow: 1px 1px 4px black;
+}
+
+header p{
+    text-shadow: 3px 3px 3px black;
+}
+
+body{
+    background-color: #4e4f9581;
+}
+
+form{
+    border-radius: 5px;
+    margin: 20px auto;
+    background-color: var(--corForm);
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    max-width: 450px;
+    box-shadow: 1px 2px 5px 2px black ;
+}
+
+div{
+    margin: 20px;
+}
+
+.container label{
+    margin-right: 10px;
+}
+
+input{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+select{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.bloco input{
+    display: flex;
+    transform: translateY(18px);
+    width: 20px;
+    height: 20px;
+}
+
+.bloco label{
+    margin: 30px;
+}
+
+.text{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    border: none;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.404);
+    font-weight: 600;
+    width: 97.5%;
+}
+
+button{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #37af65d8;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--corButton);
+}
