@@ -42,10 +42,12 @@ form{
 
 .tamanho{
     width: 97.2%;
+    padding: 10px;
 }
 
 .seletor{
     width: 100%;
+    padding: 10px;
 }
 
 div{
