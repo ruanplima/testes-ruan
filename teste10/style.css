@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    color: #333;
+}
+
+header{
+    position: relative;
+}
+
+header .bloco{
+    padding: 90px 10px;
+    color: white;
+    text-align: center;
+}
+
+.bloco h1{
+    line-height: 50px;
+}
+
+.bloco p{
+    margin: auto;
+    line-height: 26px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    max-width: 400px;
+    font-weight: bold;
+    background-color: #333;
+    opacity: 0.9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    text-indent: 5px;
+}
+
+.bloco a{
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.bloco a:hover{
+    background-color: white;
+    color: #333;
+}
+
+header .img{
+    position: absolute;
+    top: 0;
+    background: #333 url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+main{
+    background-color: #333;
+    padding-bottom: 3px;
+}
+
+main h2{
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+}
+
+main p{
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    line-height: 25px;
+}
+
+.bloco1{
+    background-color: white;
+    padding: 15px;
+}
+
+.bloco1 p{
+    text-align: justify;
+    padding: 5px;
+    max-width: 500px;
+    margin: auto;
+    line-height: 30px;
+}
+
+main .bloco2 div{
+    max-width: 450px;
+    margin: 10px auto;
+    background-color: white;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+main h3{
+    text-align: center;
+    margin: 10px 0px ;
+}
+
+main div p{
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#container1{
+    display: block;
+    padding-top: 0;
+}
+
+.container2{
+    display: block;
+}
+
+.container3{
+    display: block;
+    padding-bottom: 0;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.container4 h2{
+    text-align: center;
+    margin: 30px
+}
+
+.container4 p{
+    text-align: justify;
+    padding: 5px;
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 30px;
+}
+
+.section{
+    color: white;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+.section h3{
+    padding: 10px;
+}
+
+.section p{
+    max-width: 60%;
+    margin: auto;
+    padding: 5px;
+}
+
+.email{
+    padding: 10px;
+}
+
+.sessao1{
+    background-color: #2690D4;
+    width: 100%;
+}
+
+.sessao2{   
+    background-color: #333;
+    width: 100%;
+}
