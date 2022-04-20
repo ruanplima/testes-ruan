@@ -18,7 +18,7 @@
 
 body{
     background-color: rgba(226, 207, 207, 0.473);
-    padding: 10px;
+    padding: 20px;
 }
 
 header{
@@ -103,4 +103,17 @@ button:hover{
     background-color: rgba(0, 0, 0, 0.534);
     color: white;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .section1{
+        width: 89%;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .section2{
+        width: 89%;
+        transform: translateY(100%);
+        border-radius: 0px 0px 5px 5px;
+    }
 }
