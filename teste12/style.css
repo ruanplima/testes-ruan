@@ -23,6 +23,11 @@ main{
     border-radius: 10px;
 }
 
+section{
+    max-width: 450px;
+    padding: 15px;
+}
+
 .image{
     border-radius: 10px 10px 0px 0px;
     max-width: 450px;
@@ -50,24 +55,23 @@ main{
     font-weight: 600;
 }
 
+.bloco{
+    max-width: 450px;
+    padding: 10px;
+}
+
 .bloco2{
-    position: relative;
-    width: 285px;
-    margin: 20px 15%;
+    width: 80%;
     display: inline-flex;
     background-color: #756af121;
     padding: 15px;
     border-radius: 10px;
-}
-
-.bloco2 img{
-    margin-left: 10px;
+    margin-left: 5%;
 }
 
 .bloco2 p{
     margin: 0 auto;
     line-height: 25px;
-    margin-left: 25px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.438);
 }
@@ -97,7 +101,7 @@ button{
     color: white;
     border: none;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
