@@ -135,7 +135,6 @@ li{
     background-color: #EFEFEF;
     display: flex;
     justify-content: space-around;
-    width: 100%;
 }
 
 .container2 .bloco1{
@@ -190,7 +189,7 @@ button:hover{
 
     .container2 .bloco1{
         margin: 20px auto;
-        width: 400px;
+        width: 340px;
     }
 }
 
