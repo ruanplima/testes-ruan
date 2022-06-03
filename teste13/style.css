@@ -135,6 +135,7 @@ li{
     background-color: #EFEFEF;
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 .container2 .bloco1{
