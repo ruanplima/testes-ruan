@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Parfum</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #F2EBE3;
+        }
+
+        .container{
+            display: flex;
+            width: 650px;
+        }
+
+        img{
+            width: 300px;
+            height: 480px;
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        .preco{
+            display: flex;
+            margin: 20px;
+        }
+
+        h2{
+            margin-right: 20px;
+            margin-bottom: 20px;
+            color: #3C8067;
+            font-size: 2em;
+        }
+
+        span{
+            color: rgba(0, 0, 0, 0.692);
+            text-decoration: line-through;
+        }
+
+        .conteudo{
+            background-color:#FFF;
+            padding: 20px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        .p-principal{
+            letter-spacing: 5px;
+            margin-left: 3px;
+        }
+
+        h1{
+            font-size: 2.2em;
+            color: rgba(0, 0, 0, 0.692);
+        }
+
+        .p-secundario{
+            margin: 20px 0 40px 0;
+            color: rgba(0, 0, 0, 0.692);
+        }
+
+        .car{
+            width: 18px;
+            height: 18px;
+            margin-right: 10px ;
+            margin-bottom: -3px;
+        }
+
+        button{
+            display: block;
+            margin: 0 auto;
+            background-color: #214538;
+            border: none;
+            padding: 15px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 5px;
+            color: #FFF;
+        }
+
+        @media (max-width: 700px){
+            .container {
+                display: block;
+                width: 300px;
+            }
+            .image{
+                transform: translateY(200px);
+            }
+            img{
+                border-radius: 5px 5px 0px 0px ;
+            }
+            .conteudo{
+                transform: translateY(197px);
+                margin-bottom: 10px;
+                border-radius: 0px 0px 5px 5px;
+            }
+            h1{
+                margin-top: 10px;
+                font-size: 1.5em;
+                line-height: 35px;
+            }
+            .p-secundario{
+                line-height: 25px;
+                font-size: 14px;
+            }
+            h2{
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="image">
+            <img src="image/image-perfume-media.jpg" alt="">
+        </section>
+
+        <section class="conteudo">
+            <p class="p-principal">PERFUME</p>
+            <h1>Eau de Parfum Gabrielle Essence</h1>
+            <p class="p-secundario">Uma interpretação floral, solar e voluptuosa composta por Olivier Polge, Perfumista-Criador da Casa CHANEL.</p>
+            <section class="preco">
+                <h2>$ 149,99</h2>
+                <span>
+                    $ 169,99
+                </span>
+            </section>
+            <button>
+                <img class="car" src="image/icon-carrinho.svg" alt="logo carrinho de compra">
+                Adicionar ao carrinho</button>
+        </section>
+    </div>
+</body>
+</html>
