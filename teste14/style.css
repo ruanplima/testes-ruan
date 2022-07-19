@@ -46,6 +46,7 @@ span{
     background-color:#FFF;
     padding: 20px;
     border-radius: 0px 5px 5px 0px;
+    margin-bottom: 3px;
 }
 
 .p-principal{
@@ -68,6 +69,13 @@ h1{
     height: 18px;
     margin-right: 10px ;
     margin-bottom: -3px;
+    padding: 0;
+}
+
+button a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
 }
 
 button{
@@ -80,22 +88,33 @@ button{
     font-weight: 600;
     border-radius: 5px;
     color: #FFF;
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;   
+}
+
+footer p{
+    font-size: 11px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 700px){
     .container {
         display: block;
-        width: 300px;
+        width: 330px;
     }
     .image{
         transform: translateY(200px);
     }
     img{
-        border-radius: 5px 5px 0px 0px ;
+        border-radius: 5px 5px 0px 0px;
+        width: 330px;
     }
     .conteudo{
         transform: translateY(195px);
-        margin-bottom: 10px;
         border-radius: 0px 0px 5px 5px;
     }
     h1{
@@ -109,5 +128,9 @@ button{
     }
     h2{
         font-size: 1.6em;
+    }
+    footer{
+        position: absolute;
+        bottom: -360px;   
     }
 }
