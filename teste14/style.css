@@ -107,14 +107,14 @@ footer p{
         width: 300px;
     }
     .image{
-        transform: translateY(200px);
+        transform: translateY(180px);
     }
     img{
         border-radius: 5px 5px 0px 0px;
         width: 300px;
     }
     .conteudo{
-        transform: translateY(195px);
+        transform: translateY(170px);
         border-radius: 0px 0px 5px 5px;
     }
     h1{
@@ -131,6 +131,6 @@ footer p{
     }
     footer{
         position: absolute;
-        bottom: -360px;   
+        bottom: -380px;   
     }
 }
