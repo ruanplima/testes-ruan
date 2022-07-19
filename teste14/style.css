@@ -131,6 +131,13 @@ footer p{
     }
     footer{
         position: absolute;
-        bottom: -380px;   
+        bottom: -340px;   
+    }
+}
+
+@media (max-width: 480px){
+    footer{
+        position: absolute;
+        bottom: -490px;   
     }
 }
