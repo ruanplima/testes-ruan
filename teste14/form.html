@@ -5,11 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #F2EBE3;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #22493b;
+        }
+        
+        form{
+            max-width: 280px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 0 10px;
+            box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.26);
+        }
+
+        input{
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .name input{
+            padding: 5px;
+            outline: none;
+        }
+
+        p{
+            margin: 15px 8px;
+            font-size: 1.1em;
+        }
+
+        .endereco input{
+            padding: 5px;
+            outline: none;
+        }
+
+        .cor{
+            margin: 20px 0;
+        }
+
+        .cor input{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+
+        button{
+        display: block;
+        margin: 0 auto;
+        background-color: #214538;
+        border: none;
+        padding: 15px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 5px;
+        color: #FFF;
+        cursor: pointer;
+        }
+
+        .car{
+        width: 18px;
+        height: 18px;
+        margin-right: 10px ;
+        margin-bottom: -3px;
+        padding: 0;
+        }
+    </style>
 </head>
 <body>
     <form action="">
-        
+        <section class="name">
+            <label for="nome">Nome:</label>
+            <input required id="nome" type="text">
+            <label for="sobrenome">Sobrenome:</label>
+            <input id="sobrenome" type="text">
+        </section>
+
+        <section class="endereco">
+            <p>Preencha com seu endereço:</p>
+            <label for="estado">Estado:</label>
+            <input required id="estado" type="text">
+            <label for="cidade">Cidade:</label>
+            <input required id="cidade" type="text">
+            <label for="bairro">Bairro:</label>
+            <input required id="bairro" type="text">
+            <label for="rua">Rua:</label>
+            <input required id="rua" type="text">
+            <label for="numero">Número da Casa:</label>
+            <input id="numero" min="0" type="number">
+        </section>
+
+        <section class="cor">
+            <label for="cor">Qual cor de embalagem?</label>
+            <input id="cor" type="color">
+        </section>
+
+        <section class="btn">
+            <button>
+                <img class="car" src="image/icon-carrinho.svg" alt="logo carrinho de compra">
+                Finalizar compra
+            </button>
+        </section>
     </form>
 </body>
 </html>
