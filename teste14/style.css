@@ -104,14 +104,14 @@ footer p{
 @media (max-width: 700px){
     .container {
         display: block;
-        width: 330px;
+        width: 300px;
     }
     .image{
         transform: translateY(200px);
     }
     img{
         border-radius: 5px 5px 0px 0px;
-        width: 330px;
+        width: 300px;
     }
     .conteudo{
         transform: translateY(195px);
