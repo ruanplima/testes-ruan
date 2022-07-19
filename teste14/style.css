@@ -19,7 +19,7 @@ body{
     width: 650px;
 }
 
-img{
+.imagem1{
     width: 300px;
     height: 480px;
     border-radius: 5px 0px 0px 5px;
@@ -45,7 +45,7 @@ span{
 .conteudo{
     background-color:#FFF;
     padding: 20px;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0 5px 5px 0;
     margin-bottom: 3px;
 }
 
@@ -138,6 +138,9 @@ footer p{
 @media (max-width: 480px){
     footer{
         position: absolute;
-        bottom: -370px;   
+        bottom: -420px;   
+    }
+    h2{
+        font-size: 1.3em;
     }
 }
