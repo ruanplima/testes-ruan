@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container2{
+            /* position: absolute; */
+            background-color: rgba(0, 0, 0, 0.589);
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.788);
+            width: 350px;
+
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            z-index: 10; */
+        }
+
+        h2{
+            color: white;
+        }
+
+        p{
+            background-color: white;
+            height: 20px;
+            padding: 10px;
+            font-size: 19px;
+            width: 215px;
+            margin: 4px auto;
+            text-align: right;
+        }
+
+        table{
+            margin: 3px auto;
+        }
+
+        button{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.616);
+            color: white;
+            border: none;
+            font-size: 23px;
+            margin: 5px;
+        }
+
+        button:hover{
+            background-color: black;
+            border: 1px solid white;
+        }
+
+        .btn1{
+            height: 118px;
+        }
+
+        .btn2{
+            width: 115px;
+        }
+
+        img{
+            border-radius: 50%;
+            width: 100%;
+        }
+
+        .container1{
+            max-width: 500px;
+            max-height: 500px;
+        }
+
+        .bloco{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        body{
+            background-color: #273149;
+        }
+
+        @media (max-width: 1020px){
+            img{
+                display: none;
+            }
+
+            .container2{
+            position: absolute;
+
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            z-index: 10;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco">
+        <div class="container1">
+            <img src="imagem/mulher-calc.webp" alt="Imagem representativa de calculadora">
+        </div>
+        <div class="container2">
+            <h2>Calculadora</h2>
+            <p id="result"></p>
+            <table>
+                <tr>
+                    <td><button onclick="deletar()">AC</button></td>
+                    <td><button onclick="apagar()">C</button></td>
+                    <td><button onclick="inserir('/')">/</button></td>
+                    <td><button onclick="inserir('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('7')">7</button></td>
+                    <td><button onclick="inserir('8')">8</button></td>
+                    <td><button onclick="inserir('9')">9</button></td>
+                    <td><button onclick="inserir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('4')">4</button></td>
+                    <td><button onclick="inserir('5')">5</button></td>
+                    <td><button onclick="inserir('6')">6</button></td>
+                    <td><button onclick="inserir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="inserir('1')">1</button></td>
+                    <td><button onclick="inserir('2')">2</button></td>
+                    <td><button onclick="inserir('3')">3</button></td>
+                    <td rowspan="2"><button onclick="calcular()" class="btn1">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="inserir('0')" class="btn2">0</button></td>
+                    <td><button onclick="inserir('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script>
+        function inserir(num){
+            var numero = document.getElementById ('result').innerHTML;
+            document.getElementById ('result').innerHTML = numero + num;
+        }
+
+        function deletar(){
+            document.getElementById ('result').innerHTML = ('');
+        }
+
+        function apagar(){
+            var resultado = document.getElementById ('result').innerHTML;
+            document.getElementById('result').innerHTML = resultado.substring(0, resultado.length -1);
+        }
+
+        function calcular(){
+            var calc = document.getElementById ('result').innerHTML
+            if(calc){
+                document.getElementById('result').innerHTML = eval(calc);
+            } else{
+                window.alert('[ERRO] Verifique os valores e tente novamente!')
+            }
+        }
+    </script>
+</body>
+</html>
