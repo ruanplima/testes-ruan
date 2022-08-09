@@ -78,3 +78,10 @@ button{
 button:hover{
     background-color: var(--cor-hover);
 }
+
+
+@media (max-width: 440px){
+    .container{
+        max-width: 320px;
+    }
+}
