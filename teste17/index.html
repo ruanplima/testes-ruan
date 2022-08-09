@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <section>
+            <img src="img/img-logo-login.jpg" 
+            alt="Login de formulário">
+        </section>
+
+        <h1>Checked de Input vazio</h1>
+
+        <form id="form" autocomplete="off" action="#">
+            <label for="nome">Nome:</label>
+            <input placeholder="Insira seu nome" type="text" id="nome">
+            <label for="email">E-mail:</label>
+            <input placeholder="Insira seu e-mail" id="email" type="email">
+            <label for="senha">Senha:</label>
+            <input placeholder="Insira sua senha" id="senha" type="password">
+            <label for="confirmarSenha">Confirme sua senha:</label>
+            <input placeholder="Confirmar senha" id="confirmarSenha" type="password">
+
+            <section>
+                <p id="p"></p>
+            </section>
+
+            <button onclick="verificador()" type="button">Login</button>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #5ABF93;
+    --cor2: #26B573;
+    --cor2-bold: #1b6d47;
+    --cor3: #e4b144;
+    --cor-hover: #e79e00;
+    --cor4: #fff;
+    --color-shadow: rgba(0, 0, 0, 0.527);
+    --cor-erro: #ff0000;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+img{
+    width: 280px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container{
+    background-color: var(--cor4);
+    max-width: 380px;
+    margin: 40px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px var(--color-shadow);
+}
+
+h1{
+    text-align: center;
+    font-size: 1.6em;
+    margin: 10px 0;
+    color: var(--cor2-bold);
+    font-weight: 300;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin: 5px 0;
+}
+
+section > p{
+    font-size: 13px;
+    text-align: center;
+    margin: 15px 0 5px 0;
+    color: var(--cor-erro);
+    font-weight: 600;
+}
+
+button{
+    background-color: var(--cor3);
+    margin: 25px 0 5px 0;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: var(--cor4);
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--cor-hover);
+}
