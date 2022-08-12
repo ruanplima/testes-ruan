@@ -15,9 +15,9 @@
             background-color: rgba(128, 128, 128, 0.521);
         }
         .bloco1{
-            max-width: 400px;
+            max-width: 330px;
             margin: auto;
-            margin-top: 20vh;
+            margin-top: 50px;
             background-color: white;
             padding: 15px 15px 30px 15px;
             border-radius: 10px;
@@ -90,6 +90,7 @@
     <script>
         function Verificar(){
             var km = document.getElementById ('velocidade')
+            var tran = document.getElementById ('transporte')
             var vel = document.getElementById ('kmh')
             var mult = document.getElementById ('multa')
             var v = Number(km.value)
@@ -98,13 +99,20 @@
                 window.alert ('[ERRO] Verifique se os dados estão corretos')
             } else if( v > 65){
                 mult.innerHTML = ("Você ultrapassou o limte necessário (65) e por isso está MULTADO!")
+            } else {
+                mult.innerHTML = ''
             }
 
             var vei = document.getElementsByName ('veiculo')
             if(vei[0].checked){
                 transporte.innerHTML = ('Detectamos uma moto, com: ' +v+ 'KM/H')
-            } else{
-                transporte.innerHTML = ('Detectamos um carro, com: ' +v+  'KM/H')
+            } else if(vei[1].checked){
+                transporte.innerHTML = ('Detectamos um carro, com: ' +v+ 'KM/H')
+            }
+
+            if(km.value == 0 || km.value < 0){
+                transporte.innerHTML = ''
+                mult.innerHTML = ''
             }
         }
     </script>
