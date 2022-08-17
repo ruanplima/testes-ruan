@@ -41,7 +41,7 @@ header img{
     border: none;
     cursor: pointer;
     background-color: transparent;
-    color: #000;
+    color: transparent;
 } 
 
 .btn-menu-open{
