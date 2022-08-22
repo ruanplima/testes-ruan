@@ -40,7 +40,6 @@ main{
     margin: 150px auto;
     padding: 10px;
     text-align: center;
-    /* border-radius: 5px; */
     color: #00252E;
     box-shadow: 1px 1px 10px 3px rgba(70, 70, 70, 0.397);
 }
@@ -111,7 +110,10 @@ footer{
 }
 
 footer > .image-footer > img{
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(112%) contrast(101%);
+    filter: invert(100%) sepia(100%) 
+    saturate(0%) hue-rotate(275deg) 
+    brightness(112%) contrast(101%);
+
     width: 300px;
 }
 
@@ -125,7 +127,10 @@ footer > .tel > img,
 footer > .email > img,
 footer > .social > .social-media > img{
     width: 30px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(112%) contrast(101%);
+    filter: invert(100%) sepia(100%) 
+    saturate(0%) hue-rotate(275deg)
+    brightness(112%) contrast(101%);
+
     margin-right: 30px;
 }
 
