@@ -174,7 +174,8 @@ footer > .social{
 }
 
 @media (max-width: 400px){
-    footer > .sec > button{
+    footer > .sec > button,
+    main > button{
         width: 240px;
         font-size: 14px;
     }  
