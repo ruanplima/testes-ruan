@@ -138,13 +138,13 @@ footer > .local,
     margin: 20px 0;
 }
 
-ul, 
+ul,
 li{
     list-style: none;
     columns: 2;
 }
 
-li{
+ul > li{
     display: flex;
     padding: 30px;
     font-size: 1.2em;
@@ -179,6 +179,10 @@ footer > .social{
         width: 240px;
         font-size: 14px;
     }  
+
+    ul > li{
+        font-size: .8em;
+    }
 
     footer  > .social > .social-media-copy > p{
         font-size: 12px;
