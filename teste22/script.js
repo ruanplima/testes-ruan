@@ -15,4 +15,12 @@ function Clicar(){
     } else if (n5[3].checked){
         resultado.innerHTML = $n1 / $n2
     }
+
+    if($n1 == '' || $n2 == ''){
+        alert ('[ERRO] Verifique os dados e tente novamente!')
+        resultado.innerHTML = '[ERRO] Preencha todos os campos.'
+        resultado.style.color = 'red'
+    } else{
+        resultado.style.color = 'black'
+    }
 }

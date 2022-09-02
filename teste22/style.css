@@ -44,6 +44,10 @@ body h1, h2, h3{
     margin-bottom: 15px;
 }
 
+h2{
+    font-size: 1.2em;
+}
+
 button{
     display: block;
     margin: 15px auto;
@@ -65,4 +69,11 @@ button:hover{
     text-align: center;
     margin: 10px 0;
     font-size: 1.1em;
+}
+
+
+@media (max-width: 425px){
+    body > .container{
+        width: 300px;
+    }
 }
