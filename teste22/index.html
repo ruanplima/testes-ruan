@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vamos calcular?</h1>
+
+        <section class="section-one">
+            <label for="one">Digite o primeiro número:</label>
+            <input min="0" type="number" id="one">
+        </section>
+
+        <section class="section-two">
+            <label for="two">Digite o segundo número:</label>
+            <input min="0" type="number" id="two">
+        </section>
+
+        <section class="section-three">
+            <h2>Qual operação deseja realizar?</h2>
+            <section class="operatores">
+                <input checked id="soma" name="operator" type="radio">
+                <label for="soma">+</label>
+
+                <input id="sub" name="operator" type="radio">
+                <label for="sub">-</label>
+
+                <input id="mult" name="operator" type="radio">
+                <label for="mult">*</label>
+
+                <input id="div" name="operator" type="radio">
+                <label for="div">/</label>
+            </section>
+        </section>
+
+        <section class="sec-btn">
+            <button onclick="Clicar()">
+                Calcular
+            </button>
+        </section>
+
+        <section class="sec-four">
+            <h3>O resultado da conta foi de:</h3>
+            <p id="resultado"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
