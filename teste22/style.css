@@ -76,4 +76,8 @@ button:hover{
     body > .container{
         width: 300px;
     }
+
+    .container > .section-three > .operatores > label{
+        margin-right: -15px;
+    }
 }
