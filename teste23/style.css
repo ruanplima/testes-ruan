@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(images/bg-intro-mobile.png);
+    background-color: #ff00008c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header > h1, p{
+    color: #fff;
+    
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 1em;
+}
+
+header{
+    height: 300px;
+    max-width: 500px;
+    padding: 15px;
+    margin-right: 30px;
+}
+
+main{
+    margin-right: 20px;
+}
+
+main > div.divBtn > button{
+    width: 100%;
+    background-color: #6055A5;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 4px 2px 2px #00000046;
+    color: #9c9c9c;
+    font-size: 1em;
+}
+
+main > div.divBtn > button > strong{
+    color: #fff;
+}
+
+form{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 1px 1px rgba(0, 0, 0, 0.212);
+}
+
+form section p{
+    display: none;
+    float: right;
+    color: #be000086;
+}
+
+form section{
+    margin: 10px 0 40px 0;
+}
+
+form input, input[type = submit]{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+form > div.divBtnForm > input[type = submit]{
+    background-color: #19B773;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    text-transform: uppercase;
+    text-shadow: 900;
+    font-size: 1.1em;
+    color: #fff;
+    margin: 5px 0 15px 0;
+}
+
+.foot p strong{
+    color: #be000091;
+}
+
+.foot p{
+    color: #808080cc;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media(max-width: 855px){
+    body{
+        display: block;
+        margin: 0 auto;
+    }
+
+    header{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header h1{
+        font-size: 2.5em;
+    }
+
+    header p{
+        font-size: .9em;
+    }
+
+    form{
+        transform: translateY(-40px);
+    }
+
+    .divBtn{
+        margin-bottom: 60px;
+    }
+
+    main{
+        margin: -10px 20px 20px 20px;
+    }
+}
+
+@media(max-width: 420px){
+    header h1{
+        font-size: 2em;
+    }
+
+    header p{
+        font-size: .72em;
+    }
+
+    .divBtn{
+        margin-top: -70px;
+    }
+    .divBtn button{
+        font-size: .8em;
+    }
+}
