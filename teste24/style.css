@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color01: #D3C4FE;
+    --color02: #6240FC;
+    --color03: #4929DA;
+    --color04: #303B59;
+}
+
+
+body{
+    background-color: #e3e3e3;
+}
+
+.father{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family:'Schibsted Grotesk', sans-serif;
+}
+
+.sec01, .sec02{
+    height: 450px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 10px 10px 10px #0000002c;
+
+    transition: width .5s, heigth .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.father .sec01{
+    background-color: var(--color02);
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.father .sec01 h1{
+    color: var(--color01);
+    margin: 10px 0;
+}
+
+.father .sec01 button{
+    border: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--color03);
+    font-size: 2em;
+    color: #ffff;
+    margin: 20px auto;
+}
+
+.father .sec01 h2{
+    color: #ffff;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.father .sec01 p{
+    font-size: 13px;
+    color: var(--color01);
+    font-weight: 600;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.father .sec02{
+    background-color: #ffff;
+    border-radius: 0 10px 10px 0;
+}
+
+.father .sec02 h3{
+    color: var(--color01);
+    margin: 10px 0;
+}
+
+.father .sec02 section{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.father > .sec02 > section > p{
+    font-family: 18px;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.father > .sec02 > section > aside{
+    color: var(--color01);
+}
+
+.father > .sec02 > section > aside > p > strong{
+    color: #000;
+}
+
+.father .sec02 .reaction{
+    background-color: #f3212126;
+}
+
+.father >.sec02 > .reaction > p{
+    color: #c00000;
+}
+
+.father .sec02 .memory{
+    background-color: #ffff447a;
+}
+
+.father >.sec02 > .memory > p{
+    color: #b7b700;
+}
+
+.father .sec02 .verbal{
+    background-color: #40e24037;
+}
+
+.father >.sec02 > .verbal > p{
+    color: #006500;
+}
+
+.father .sec02 .visual{
+    background-color: #3737ec83;
+}
+
+.father >.sec02 > .visual > p{
+    color: rgb(0, 0, 77);
+}
+
+.father .sec02 button{
+    background-color: var(--color04);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffff;
+    margin: 35px 0;
+    transition: linear .3s;
+}
+
+.father .sec02 button:hover{
+    cursor: pointer;
+    background-color: #1a2955d8;
+}
+
+
+@media(max-width: 775px){
+    .father{
+        flex-direction: column;
+        height: 100%;
+        margin: 20px;
+    }
+
+    .sec01, .sec02{
+        width: 70%;
+    }
+
+    .father > .sec01{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .father > .sec02{
+        border-radius: 0 0 10px 10px;
+    }
+}
