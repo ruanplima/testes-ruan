@@ -19,10 +19,11 @@ body{
 
 .father{
     display: flex;
-    height: 100vh;
+    height: 84vh;
     align-items: center;
     justify-content: center;
     font-family:'Schibsted Grotesk', sans-serif;
+    margin: 50px;
 }
 
 .sec01, .sec02{
