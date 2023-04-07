@@ -37,7 +37,7 @@ body{
     transition-timing-function: ease-in-out;
 }
 
-.father .sec01{
+.father > .sec01{
     background-color: var(--color02);
     text-align: center;
     border-radius: 10px 0 0 10px;
@@ -73,7 +73,7 @@ body{
     line-height: 25px;
 }
 
-.father .sec02{
+.father > .sec02{
     background-color: #ffff;
     border-radius: 0 10px 10px 0;
 }
