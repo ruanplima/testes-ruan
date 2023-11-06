@@ -144,3 +144,19 @@ form button{
         padding: 30px 20px 15px 20px;
     }
 }
+
+@media(max-width: 420px){
+    .container,
+    .login{
+        max-width: 300px;
+    }
+
+    .login{
+        margin: 0 auto;
+    }
+
+    .entrar span.ou,
+    .entrar span.esqueceu{
+        width: 250px;
+    }
+}
