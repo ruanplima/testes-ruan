@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #CAD6FD;
+}
+
+.container{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 300px;
+    gap: 20px;
+    max-width: 700px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px #646464c0;
+}
+
+.entrar{
+    padding: 2rem;
+}
+
+.entrar span.title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
+.entrar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.entrar ul i{
+    color: #5543B0;
+    border: .4px solid #5543B0;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 40px;
+    text-align: center;
+}
+
+.entrar span.ou,
+.entrar span.esqueceu{
+    border-top: 2px solid #5543B0;
+    border-bottom: 2px solid #5543B0;
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #d8d8d88e;
+}
+
+form button{
+    background-color: #5543B0;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.login{
+    display: flex;
+    height: 100%;
+    background-color: #5543B0;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    text-align: end;
+    border-radius: 80px 0 0 80px;
+}
+
+.login-div span{
+    font-size: 2rem;
+}
+
+.login-div p{
+    margin: 20px 0;
+}
+
+
+@media (max-width: 950px){
+    .container{
+        grid-template-columns: 1fr;
+        max-width: 490px;
+        grid-template-rows: 1fr auto;
+    }
+
+    .entrar{
+        grid-row: 2 / 3;
+    }
+
+    .login{
+        border-radius: 20px 20px 0 0;
+        text-align: start;
+    }
+}
+
+@media(max-width: 560px){
+    .container{
+        max-width: 430px;
+    }
+}
+
+@media(max-width: 500px){
+    .container{
+        max-width: 380px;
+    }
+
+    .login{
+        padding: 30px 20px 15px 20px;
+    }
+}
