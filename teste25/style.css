@@ -72,10 +72,32 @@ form{
 }
 
 form input{
+    display: block;
+    width: 100%;
     padding: 10px;
     border: none;
     outline: none;
     background-color: #d8d8d88e;
+}
+
+form input[type='password']{
+    padding-right: 50px;
+}
+
+form div{
+    position: relative;
+}
+
+form i{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 10px;
+    color: #5543B0;
+    font-weight: 900;
+    cursor: pointer;
+
+    transform: translateY(-50%);
 }
 
 form button{
